@@ -1,0 +1,12 @@
+{
+  "name": "Meli URL to dev URL",
+  "version": "1.0.0",
+  "description": "Meli URL to dev URL",
+  "manifest_version": 3,
+  "author": "Javier Pacareu",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Change production URL to Meli URL and viceversa"
+  },
+  "permissions": ["tabs", "storage"]
+}
