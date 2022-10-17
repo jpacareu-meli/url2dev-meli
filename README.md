@@ -11,4 +11,4 @@ Press `Switch`: https://dev.mercadolibre.cl:8443/ ➡️ https://www.mercadolibr
 
 ## How to Install
 
-![Alt Text](/how-to.gif)
+Install [extension](https://chrome.google.com/webstore/detail/meli-url-to-dev-url/dbekachcabpmjpifpfhheieddafaoaij) from the store
