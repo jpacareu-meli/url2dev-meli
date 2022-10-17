@@ -1,5 +1,5 @@
 # url2dev-meli
-Chrome extension to switch URL from dev to prod and viceversa
+Chrome [extension](https://chrome.google.com/webstore/detail/meli-url-to-dev-url/dbekachcabpmjpifpfhheieddafaoaij) to switch URL from dev to prod and viceversa
 
 ![image](https://user-images.githubusercontent.com/57413670/195655542-16573e8d-99b8-498e-b805-6d4155be08ab.png)
 
