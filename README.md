@@ -8,6 +8,8 @@ Press `Switch`: https://www.mercadolibre.cl/ ➡ https://dev.mercadolibre.cl:844
 
 Press `Switch`: https://dev.mercadolibre.cl:8443/ ➡️ https://www.mercadolibre.cl/
 
+![image](/how-to.gif)
+
 
 ## How to Install
 
