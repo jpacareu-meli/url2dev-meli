@@ -1,5 +1,6 @@
 function init() {
-  const btn = document.querySelector("button");
+  const btn = document.querySelector("#current-tab");
+  const btnNewTab = document.querySelector("#new-tab");
   const port = document.querySelector("#port");
   const subdomainProd = document.querySelector("#subdomain-prod");
   const subdomainDev = document.querySelector("#subdomain-dev");
@@ -15,7 +16,7 @@ function init() {
       subDevVal !== undefined ? subDevVal : subdomainDev.value;
   };
 
-  const eventHandler = () => {
+  const eventHandler = (event) => {
     chrome.tabs.query(
       { active: true, currentWindow: true },
       async function ([activeTab]) {
@@ -37,14 +38,23 @@ function init() {
         await setValue("port", port.value);
         await setValue("subdomainProd", subdomainProd.value);
         await setValue("subdomainDev", subdomainDev.value);
-        chrome.tabs.update(activeTab.id, {
-          url: activeURL.toString(),
-        });
+
+        if (event.target.id === "new-tab") {
+          chrome.tabs.create({
+            active: true,
+            url: activeURL.toString(),
+          });
+        } else {
+          chrome.tabs.update(activeTab.id, {
+            url: activeURL.toString(),
+          });
+        }
       }
     );
   };
 
   btn && btn.addEventListener("click", eventHandler);
+  btnNewTab && btnNewTab.addEventListener("click", eventHandler);
   onOpen();
 }
 
